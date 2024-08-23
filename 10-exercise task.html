@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise-10</title>
+		<link rel="stylesheet" href="styles/10-exercise-task.css" type="text/css" />
+	</head>
+	<body>
+		<button
+			class="toggle-button js-game-button"
+			onclick="const buttonElement = document.querySelector('.js-game-button');
+    if (!buttonElement.classList.contains('is-toggled')) {
+      buttonElement.classList.add('is-toggled');
+    } else buttonElement.classList.remove('is-toggled');"
+		>
+			Gaming
+		</button>
+		<button
+			class="toggle-button js-music-button"
+			onclick="const buttonElement = document.querySelector('.js-music-button');
+    if (!buttonElement.classList.contains('is-toggled')) {
+      buttonElement.classList.add('is-toggled');
+    } else buttonElement.classList.remove('is-toggled');"
+		>
+			Music
+		</button>
+		<button
+			class="toggle-button js-tech-button"
+			onclick="const buttonElement = document.querySelector('.js-tech-button');
+    if (!buttonElement.classList.contains('is-toggled')) {
+      buttonElement.classList.add('is-toggled');
+    } else buttonElement.classList.remove('is-toggled');"
+		>
+			Tech
+		</button>
+		<script></script>
+	</body>
+</html>

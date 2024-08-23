@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise-10</title>
+		<link rel="stylesheet" href="styles/10-exercise-task.css" type="text/css" />
+	</head>
+	<body>
+		<button class="toggle-button js-game-button" onclick="toggleClass('.js-game-button')">Gaming</button>
+		<button class="toggle-button js-music-button" onclick="toggleClass('.js-music-button')">Music</button>
+		<button class="toggle-button js-tech-button" onclick="toggleClass('.js-tech-button')">Tech</button>
+		<script>
+			let checkClassName = "is-toggled";
+
+			let toggleClass = function (inputClass) {
+				document.querySelector(".js-game-button").classList.remove(checkClassName);
+				document.querySelector(".js-music-button").classList.remove(checkClassName);
+				document.querySelector(".js-tech-button").classList.remove(checkClassName);
+				document.querySelector(inputClass).classList.add(checkClassName);
+			};
+		</script>
+	</body>
+</html>

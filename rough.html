@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		<p class="js-calculation"></p>
+		<p>
+			<button
+				onclick="
+        //calculation += '1';
+        //console.log(calculation);
+				let value= document.querySelector('button').innerHTML;
+				calculate(value);
+      "
+			>
+				1
+			</button>
+
+			<button
+				class="js-button2"
+				onclick="
+        //calculation += '2';
+        //console.log(calculation);
+				let value= document.querySelector('.js-button2').innerHTML;
+				calculate(value);
+      "
+			>
+				2
+			</button>
+
+			<button
+				class="js-button3"
+				onclick="
+        //calculation += '3';
+        //console.log(calculation);
+				let value= document.querySelector('.js-button3').innerHTML;
+				calculate(value);
+      "
+			>
+				3
+			</button>
+
+			<button
+				class="js-button4"
+				onclick="
+       // calculation += ' + ';
+       // console.log(calculation);
+			 let value= document.querySelector('.js-button4').innerHTML;
+				calculate(value);
+      "
+			>
+				+
+			</button>
+		</p>
+
+		<p>
+			<button
+				onclick="
+        calculation += '4';
+        console.log(calculation);
+      "
+			>
+				4
+			</button>
+
+			<button
+				onclick="
+        calculation += '5';
+        console.log(calculation);
+      "
+			>
+				5
+			</button>
+
+			<button
+				onclick="
+        calculation += '6';
+        console.log(calculation);
+      "
+			>
+				6
+			</button>
+
+			<button
+				onclick="
+        calculation += ' - ';
+        console.log(calculation);
+      "
+			>
+				-
+			</button>
+		</p>
+
+		<p>
+			<button
+				onclick="
+        calculation += '7';
+        console.log(calculation);
+      "
+			>
+				7
+			</button>
+
+			<button
+				onclick="
+        calculation += '8';
+        console.log(calculation);
+      "
+			>
+				8
+			</button>
+
+			<button
+				onclick="
+        calculation += '9';
+        console.log(calculation);
+      "
+			>
+				9
+			</button>
+
+			<button
+				onclick="
+        calculation += ' * ';
+        console.log(calculation);
+      "
+			>
+				*
+			</button>
+		</p>
+
+		<p>
+			<button
+				onclick="
+        calculation += '0';
+        console.log(calculation);
+      "
+			>
+				0
+			</button>
+
+			<button
+				onclick="
+        calculation += '.';
+        console.log(calculation);
+      "
+			>
+				.
+			</button>
+
+			<button
+				onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        console.log(calculation);
+      "
+			>
+				=
+			</button>
+
+			<button
+				onclick="
+        calculation += ' / ';
+        console.log(calculation);
+      "
+			>
+				/
+			</button>
+		</p>
+
+		<p>
+			<button
+				onclick="
+        calculation = '';
+        console.log(calculation);
+      "
+			>
+				Clear
+			</button>
+		</p>
+
+		<script>
+			let calculation = "";
+			function calculate(value) {
+				calculation += value;
+				document.querySelector(".js-calculation").innerHTML = calculation;
+			}
+		</script>
+	</body>
+</html>

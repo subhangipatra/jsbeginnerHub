@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML CSS Review</title>
+		<style>
+			/*this a javascript code.*/
+
+			.red-button {
+				background-color: yellow;
+				color: black;
+			}
+			.add-button {
+				background-color: yellow;
+			}
+			.buy-button {
+				background-color: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<!--This is an HTML code-->
+		<button title="good job" onclick="alert('good job!');">hello</button>
+		<p>Paragraph of <button class="red-button">hello</button> Text</p>
+		<p>Adults Plain Cotton Tshirt</p>
+		<p>Price: $7.99</p>
+		<button class="add-button" onclick="alert('Added');">Add To Cart</button>
+		<button class="buy-button" onclick="alert('Loading...');alert('Purchased')">Buy Now</button>
+
+		<!--Amazon Cart code-->
+
+		<!--code for calculator-->
+		<p>Calculator</p>
+		<p class="js-calculation"></p>
+		<p>
+			<button
+				onclick="updateCalculation('1');
+    "
+			>
+				1
+			</button>
+			<button
+				onclick="updateCalculation('2');
+    "
+			>
+				2
+			</button>
+			<button
+				onclick="updateCalculation('3');
+    "
+			>
+				3
+			</button>
+			<button
+				onclick="updateCalculation(' + '); 
+    "
+			>
+				+
+			</button>
+			<button
+				onclick="
+         calculation = eval(calculation); 
+         //console.log(calculation);
+         displayCalculation();
+         localStorage.setItem('calculation',calculation);
+    "
+			>
+				=
+			</button>
+		</p>
+		<p>
+			<button
+				onclick="updateCalculation('4'); 
+    "
+			>
+				4
+			</button>
+			<button
+				onclick="updateCalculation('5'); 
+    "
+			>
+				5
+			</button>
+			<button
+				onclick="updateCalculation(' 6 '); 
+    "
+			>
+				6
+			</button>
+			<button
+				onclick="updateCalculation(' - '); 
+  "
+			>
+				-
+			</button>
+		</p>
+		<p>
+			<button
+				onclick="updateCalculation('7'); 
+    "
+			>
+				7
+			</button>
+			<button
+				onclick="updateCalculation('8'); 
+    "
+			>
+				8
+			</button>
+			<button
+				onclick="updateCalculation('9'); 
+    "
+			>
+				9
+			</button>
+			<button
+				onclick="
+ updateCalculation(' * '); 
+  "
+			>
+				*
+			</button>
+		</p>
+		<p>
+			<button
+				onclick="
+        updateCalculation('0'); 
+  "
+			>
+				0
+			</button>
+			<button
+				onclick=" updateCalculation(' / '); 
+  "
+			>
+				/
+			</button>
+			<button
+				onclick="
+        calculation='';
+        displayCalculation();
+        localStorage.setItem('calculation',calculation);
+      //console.log(calculation);"
+			>
+				Clear
+			</button>
+		</p>
+
+		<script>
+			let calculation = "";
+
+			localStorage.getItem;
+			function updateCalculation(value) {
+				calculation += value;
+				//console.log(calculation);
+				displayCalculation();
+				localStorage.setItem("calculation", calculation);
+			}
+			function displayCalculation() {
+				document.querySelector(".js-calculation").innerHTML = calculation;
+			}
+		</script>
+	</body>
+</html>
