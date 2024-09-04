@@ -1,0 +1,193 @@
+body {
+	font-family: Arial;
+}
+.header {
+	background-color: rgb(19, 25, 33);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo-div {
+	padding: 20px;
+}
+.logo-image {
+	height: 50%;
+	width: 50%;
+}
+.search-div {
+	flex: 1;
+	max-width: 850px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+}
+.search-textbox {
+	flex: 1;
+	font-size: 16px;
+	padding-left: 15px;
+	border: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.search-button {
+	background-color: rgb(254, 189, 105);
+	border: none;
+	width: 5%;
+	height: 80%;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	flex-shrink: 0;
+}
+.search-icon {
+	height: 22px;
+	margin-left: 2px;
+	margin-top: 3px;
+}
+.right-div {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+.orders-link {
+	color: white;
+	text-decoration: none;
+}
+
+.returns-text {
+	display: block;
+	font-size: 13px;
+}
+
+.orders-text {
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.cart-link {
+	color: white;
+	display: flex;
+	align-items: center;
+	position: relative;
+	text-decoration: none;
+}
+
+.cart-icon {
+	width: 50%;
+}
+
+.cart-text {
+	margin-top: 12px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.cart-quantity {
+	color: rgb(240, 136, 4);
+	font-size: 16px;
+	font-weight: 700;
+	position: absolute;
+	top: 4px;
+	left: 22px;
+	width: 20%;
+	text-align: center;
+}
+.main-div {
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60%;
+}
+.your-order-text {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+.main-order-list {
+	border: 1px solid rgb(231, 231, 231);
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+.order-header {
+	border-bottom: 1px solid rgb(231, 231, 231);
+	background-color: rgb(240, 242, 242);
+	display: flex;
+	justify-content: space-between;
+}
+.order-header-left {
+	display: flex;
+	flex: 1;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.order-header-right {
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.order-text {
+	font-weight: bold;
+}
+.order-date-info {
+	margin-right: 40px;
+}
+
+.image-div {
+	width: 18%;
+	flex: 1;
+}
+.image1 {
+	width: 80%;
+}
+.left-order-detail {
+	display: flex;
+}
+.order-details-info {
+	display: flex;
+	padding: 20px;
+	justify-content: space-between;
+	align-items: center;
+}
+.track-button {
+	padding: 8px;
+	background-color: white;
+	border: 1px solid rgb(231, 231, 231);
+	border-radius: 5px;
+	width: 95%;
+	cursor: pointer;
+}
+.button-div {
+	width: 50%;
+}
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 3;
+}
+.info-header {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.buy-again-icon {
+	width: 20%;
+	margin-right: 10px;
+}
+.buy-again-button {
+	background-color: rgb(255, 216, 20);
+	border: none;
+	border-radius: 5px;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 35%;
+	cursor: pointer;
+	padding: 10px 15px;
+}

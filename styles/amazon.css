@@ -1,0 +1,161 @@
+body {
+	font-family: Arial;
+}
+.header {
+	background-color: rgb(19, 25, 33);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo-div {
+	padding: 20px;
+}
+.logo-image {
+	height: 50%;
+	width: 50%;
+}
+.search-div {
+	flex: 1;
+	max-width: 850px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: flex;
+}
+.search-textbox {
+	flex: 1;
+	font-size: 16px;
+	padding-left: 15px;
+	border: none;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.search-button {
+	background-color: rgb(254, 189, 105);
+	border: none;
+	width: 5%;
+	height: 80%;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	flex-shrink: 0;
+}
+.search-icon {
+	height: 22px;
+	margin-left: 2px;
+	margin-top: 3px;
+}
+.right-div {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+.orders-link {
+	color: white;
+	text-decoration: none;
+}
+
+.returns-text {
+	display: block;
+	font-size: 13px;
+}
+
+.orders-text {
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.cart-link {
+	color: white;
+	display: flex;
+	align-items: center;
+	position: relative;
+	text-decoration: none;
+}
+
+.cart-icon {
+	width: 50%;
+}
+
+.cart-text {
+	margin-top: 12px;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.cart-quantity {
+	color: rgb(240, 136, 4);
+	font-size: 16px;
+	font-weight: 700;
+	position: absolute;
+	top: 4px;
+	left: 22px;
+	width: 20%;
+	text-align: center;
+}
+
+.main-section {
+	margin-top: 60px;
+	width: 100%;
+}
+.image-socks {
+	max-width: 100%;
+	height: 100%;
+}
+.socks-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 180px;
+	margin-bottom: 20px;
+}
+
+.sub-section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.section-div {
+	display: flex;
+	flex-direction: column;
+	vertical-align: center;
+	border-right: 1px solid rgb(231, 231, 231);
+	border-bottom: 1px solid rgb(231, 231, 231);
+	padding-top: 40px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.text-div {
+	width: 100%;
+	height: 20%;
+}
+.rating-image {
+	width: 50%;
+}
+.rating-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	width: 50%;
+}
+.quantity-div {
+	padding: 10px;
+}
+.add-button {
+	background-color: yellow;
+	border: none;
+	border-radius: 50px;
+	width: 100%;
+	padding: 8px;
+}
+.add-div {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	margin-bottom: 20px;
+}

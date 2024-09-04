@@ -1,0 +1,120 @@
+body {
+	font-family: Arial;
+}
+.checkout-container {
+	display: grid;
+	grid-template-columns: 15% 1fr 15%;
+	margin-top: 20px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 15%;
+	right: 15%;
+	z-index: 100;
+	background-color: white;
+}
+.logo-image {
+	width: 90%;
+}
+.items-count {
+	color: rgb(0, 113, 133);
+}
+.checkout-text {
+	font-size: 25px;
+}
+.review-container {
+	margin-top: 80px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.review-details-container {
+	display: flex;
+	margin-top: 20px;
+}
+.left-section {
+	flex: 2;
+	margin-right: 10px;
+	height: fit-content;
+}
+
+.right-section {
+	flex: 1;
+	border: 1px solid rgb(231, 231, 231);
+	border-radius: 5px;
+	padding: 20px 15px;
+	height: fit-content;
+}
+.delivery-date-text {
+	color: green;
+	font-weight: bold;
+	font-size: 18px;
+}
+.order-summary-text {
+	font-weight: bold;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.order-detail-container {
+	display: flex;
+	margin-top: 20px;
+}
+.image-container {
+	flex: 1;
+}
+.detail-container,
+.delivery-container {
+	flex: 2;
+	margin-right: 5px;
+}
+.image {
+	width: 15%;
+	margin-right: 15px;
+	height: 15%;
+}
+.order-info {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.delivery-option-input {
+	display: grid;
+	grid-template-columns: 24px 1fr;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.first-review {
+	border: 1px solid rgb(231, 231, 231);
+	border-radius: 5px;
+	padding: 20px 15px;
+}
+.first-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.last-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+.place-order-button {
+	background-color: rgb(255, 216, 20);
+	border: none;
+	border-radius: 8px;
+	padding: 15px 100px;
+	width: 100%;
+}
+.second-review {
+	border: 1px solid rgb(231, 231, 231);
+	margin-right: 10px;
+	border-radius: 5px;
+	padding: 20px 15px;
+	margin-top: 10px;
+	height: fit-content;
+}

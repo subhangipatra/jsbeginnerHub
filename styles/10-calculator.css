@@ -1,0 +1,43 @@
+body {
+	background-color: black;
+}
+.header {
+	margin-top: 20px;
+}
+.numbers-button {
+	background-color: rgb(58, 57, 57);
+	color: white;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+}
+.symbol-button {
+	background-color: orange;
+	color: white;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 15px;
+	text-align: center;
+	font-size: 15px;
+	cursor: pointer;
+}
+.clear-button {
+	background-color: rgb(58, 57, 57);
+	color: white;
+	border: none;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	padding: 10px 10px;
+	font-size: 9px;
+	cursor: pointer;
+}
+.display-text {
+	color: white;
+	font-size: 15px;
+}

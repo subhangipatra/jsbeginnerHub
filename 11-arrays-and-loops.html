@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arrays and Loops</title>
+	</head>
+	<body>
+		<script>
+			const myArray = [10, 20, 30];
+			console.log(myArray);
+			console.log(myArray[0]);
+			myArray[0] = 15;
+			console.log(myArray);
+			myArray2 = [1, "hello", true, { name: "socks" }, [1, 2]];
+			console.log(typeof [(1, 2)]);
+			console.log(Array.isArray([1, 2]));
+
+			console.log(myArray.length);
+			//add values to an array
+			myArray.push(100);
+			console.log(myArray);
+			//removes vales from Array(first value in parameter is the index and 2nd parameter is the number of values you want to delete from the index position mentioned in first parametr)
+			myArray.splice(0, 1);
+			console.log(myArray);
+
+			let i = 1;
+			while (i <= 5) {
+				console.log(i);
+				i++;
+			}
+
+			for (let i = 1; i <= 5; i++) {
+				console.log(i);
+			}
+
+			const todolist = ["make dinner", "wash dishes", "play games"];
+			for (i = 0; i < todolist.length; i++) {
+				console.log(todolist[i]);
+			}
+
+			//Accumulator pattern
+			const final = [];
+			const number = [1, 2, 3, 4];
+			let sum = 0;
+			for (i = 0; i < number.length; i++) {
+				final.push(number[i] * 2);
+			}
+			console.log(final);
+
+			const array1 = [1, 2, 3];
+			const array2 = array1.slice();
+			array2.push(4);
+			console.log(array1);
+			console.log(array2);
+			//this will destructure array and store 1 in firstvalue variable and respectively
+			const [firstvalue, secondvalue, thirdvalue] = [1, 2, 3];
+
+			for (let i = 1; i < 10; i++) {
+				if (i === 3) {
+					continue;
+				}
+				console.log(i);
+				if (i === 8) break;
+			}
+		</script>
+	</body>
+</html>

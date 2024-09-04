@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel="stylesheet" href="styles/10-calculator.css" />
+	</head>
+	<body>
+		<p class="display-text js-text"></p>
+		<p class="header">
+			<button class="numbers-button" onclick="calculate('1');">1</button>
+			<button class="numbers-button" onclick="calculate('2');">2</button>
+			<button class="numbers-button" onclick="calculate('3');">3</button>
+			<button class="symbol-button" onclick="calculate(' + ');">+</button>
+		</p>
+		<p>
+			<button class="numbers-button" onclick="calculate('4');">4</button>
+			<button class="numbers-button" onclick="calculate('5');">5</button>
+			<button class="numbers-button" onclick="calculate('6');">6</button>
+			<button class="symbol-button" onclick="calculate(' - ');">-</button>
+		</p>
+		<p>
+			<button class="numbers-button" onclick="calculate('7');">7</button>
+			<button class="numbers-button" onclick="calculate('8');">8</button>
+			<button class="numbers-button" onclick="calculate('9');">9</button>
+			<button class="symbol-button" onclick="calculate(' * ');">*</button>
+		</p>
+		<p>
+			<button class="numbers-button" onclick="calculate('0');">0</button>
+			<button class="numbers-button" onclick="calculate('.');">.</button>
+			<button class="numbers-button" onclick="sum =eval(sum); calculate('=');">=</button>
+			<button class="symbol-button" onclick="calculate(' / ');">/</button>
+		</p>
+		<p>
+			<button class="clear-button" onclick="sum=''; document.querySelector('.js-text').innerHTML =sum; localStorage.setItem('sum',sum);">Clear</button>
+		</p>
+
+		<script src="scripts/10-calculator.js"></script>
+	</body>
+</html>
